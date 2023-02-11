@@ -17,6 +17,16 @@ VERSION:	Versoin Number
 /*  typography */
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Poppins:300,400,500,600,700&display=swap");
 
+@font-face {
+  font-family: "Lucity-condensed";
+  src: url("../fonts/lucidity-condensed.ttf");
+}
+
+@font-face {
+  font-family: "Sansation-Light";
+  src: url("../fonts/Sansation-Light.ttf");
+}
+
 body {
   line-height: 1.2;
   font-family: "Poppins", sans-serif;
@@ -535,6 +545,15 @@ a:hover {
 
 .overflow-hidden {
   overflow: hidden !important;
+}
+
+.font-name{
+  font-family: "Lucity-condensed", sans-serif !important;
+}
+
+.font-subname{
+  font-family: "Sansation-Light", sans-serif !important;
+  font-size: 2.5rem;
 }
 
 .font-primary {
@@ -1061,6 +1080,12 @@ footer .overlay-image {
   overflow: hidden;
   max-height: 260px;
   max-width: 260px;
+}
+
+.card-flex{
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .card {
