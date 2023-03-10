@@ -1104,4 +1104,17 @@ align-items: center;
   border: 0;
 }
 
+.card p{
+  padding: 0 2em;
+}
+
+.card ol{
+  padding: 0 4em;
+  list-style-type: disclosure-closed;
+}
+
+dt{
+  margin-top: 2em;
+}
+
 /*# sourceMappingURL=style.css.map */
