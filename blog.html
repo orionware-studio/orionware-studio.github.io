@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 
-<!--
- // WEBSITE: https://themefisher.com
- // TWITTER: https://twitter.com/themefisher
- // FACEBOOK: https://www.facebook.com/themefisher
- // GITHUB: https://github.com/themefisher/
--->
-
 <html lang="es">
 
 <head>
@@ -16,7 +9,7 @@
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  
+
   <!-- ** Plugins Needed for the Project ** -->
   <!-- Bootstrap -->
   <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
@@ -29,9 +22,15 @@
   <!-- card slider -->
   <link rel="stylesheet" href="plugins/card-slider/css/style.css">
 
+  <link type="text/css" rel="stylesheet" href="css/lightgallery-bundle.css" />
+
+  <!-- nanogallery2 -->
+  <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet"
+    type="text/css">
+
   <!-- Main Stylesheet -->
   <link href="css/style.css" rel="stylesheet">
-  
+
   <!--Favicon-->
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -39,256 +38,292 @@
 </head>
 
 <body>
-  
 
-<header class="navigation fixed-top">
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Egen"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div class="collapse navbar-collapse text-center" id="navigation">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">Nosotros</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="services.html">Servicios</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="blog.html">Save Our Pets</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="portfolio.html">Portafolio</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="team.html">Team</a>
+  <header class="navigation fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Egen"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Save Our Pets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portafolio</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contáctanos</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- page-title -->
+  <section class="page-title bg-cover" data-background="images/backgrounds/page-title.jpg">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="display-1 text-white font-weight-bold font-primary">Save Our Pets</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /page-title -->
+
+  <!-- details-blog -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h3 class="font-tertiary mb-5 text-center">Save Our Pets</h3>
+          <img src="images/project/project-1.png" alt="post-thumb" class="img-fluid w-100 mb-3">
+          <div class="content">
+            <h4>Funcionalidades</h4>
+            <dl>
+              <dt>Módulo Usuarios:</dt>
+              <dd>Consiste en las funciones de agregar, editar y eliminar los diferentes tipos de usuario existentes
+                dentro de la aplicación en base a cada nivel de jerarquia que tendran.
+                <br />Existiran 3 tipos de usuario: Administrador, Personal ONG y Usuario.
+              </dd>
+              <dt>Módulo: Reporte de animal en condición de calle</dt>
+              <dd>Aquí se realiza el reporte de un animal en condición de calle. Para ello dentro de la aplicación se
+                activa la cámara para poder tomar un video o fotografía del animal, y se solicita el permiso para
+                acceder a la ubicación geográfica del usuario en ese momento. Se coloca una dirección textual de igual
+                forma del lugar con referencias para que sea mucho más sencillo identificar el lugar y una descripción
+                de la apariencia física del animal. Si la persona que realiza el reporte está registrada en el software
+                queda identificado quién lo hizo, sino se guarda como un reporte anónimo.
+                <br />
+                Posterior a la realización del reporte la ONG hará el resto, desde llegar al lugar, recoger al animal y
+                llevarlos hasta las instalaciones pertinentes para que sea tratado. Una vez sanado y vacunado el animal
+                se coloca en estado de adopción.
+              </dd>
+
+              <dt>Módulo: Expediente de mascotas:</dt>
+              <dd>Posteriormente se haya hecho un reporte de un animal callejero y de que haya sido rescatado, se
+                registrara la mascota dentro del sistema, usando la siguiente información:
+                <ul style="list-style-type: none;">
+                  <li>Nombre de mascota</li>
+                  <li>Especie</li>
+                  <li>Raza</li>
+                  <li>Color de pelo</li>
+                  <li>Fecha de nacimiento</li>
+                  <li>Peso</li>
+                  <li>Esterilizado</li>
+                  <li>Estado</li>
+                  <li>Fotografía</li>
+                  <li>Estado de salud</li>
+
+                </ul>A su vez, se llevará un registro de vacunas aplicadas a la mascota en cuestión.
+                <br />Existiran 3 estados para una mascota: En rescate, rescatado o adoptado.
+
+              </dd>
+
+              <dt>Módulo: Solicitud de adopcion</dt>
+              <dd>Las mascotas que ya se encuentran en buen estado de salud y vacunados se colocan en estado de
+                adopción. Se muestra un catálogo con el listado de las mascotas disponibles, su foto, nombre y
+                descripción. Un usuario que desee adoptar a una mascota debe enviar una solicitud de adopción, donde se
+                le solicitan sus datos personales, en caso que ya se encuentre registrado en la aplicación este paso se
+                omite y solo debe aceptar los requerimientos para la adopción. Con la solicitud enviada personal de la
+                ONG verifica los datos y procede a aceptarla o rechazarla según su criterio.
+                <br />
+                Si es aceptada se envía una notificación al usuario que se aceptó su solicitud y los pasos a seguir para
+                que se le entregue su nueva mascota.
+                <br />
+                Si es rechazada igual se notifica y se explica el porqué no se aceptó su solicitud.
+              </dd>
+
+            </dl>
+
+            <h4>¿A quién va dirigida la aplicación?</h4>
+            <p>
+              Está dirigida principalmente a aquellos usuarios que tienen una preocupación por el bienestar de los
+              animales y que están dispuestos a tomar medidas para mejorar la calidad de vida de los animales en
+              situación de calle. Los usuarios de esta aplicación podrían incluir:
+            <ol style="list-style: disclosure-open;">
+              <li>Personas que ya están involucradas en el cuidado de mascotas callejeras, como voluntarios en refugios
+                de animales o grupos de rescate.</li>
+              <li>Dueños de mascotas que quieren ayudar a los animales callejeros, pero no tienen los recursos o el
+                espacio para adoptarlos.</li>
+
+              <li>Personas que quieren aprender más sobre cómo cuidar de los animales callejeros y cómo pueden ayudar.
+              </li>
+              <li>Organizaciones que se dedican al cuidado de animales callejeros y que buscan una manera más efectiva
+                de registrar y monitorear la ubicación y el estado de los animales.</li>
+              <li>
+                Personas interesadas en adoptar mascotas callejeras que buscan información y orientación sobre el
+                proceso de adopción.
+              </li>
+            </ol>
+
+            En resumen, está dirigida a cualquier persona que tenga interés en mejorar el bienestar de los animales
+            callejeros y quiera contribuir a su cuidado y protección.
+            </p>
             
-            <a class="dropdown-item" href="career.html">Career</a>
-            <a class="dropdown-item" href="career-single.html">Career Details</a>
-            <a class="dropdown-item" href="blog-single.html">Blog Details</a>
-            <a class="dropdown-item" href="pricing.html">Pricing</a></a>
-            <a class="dropdown-item" href="faqs.html">FAQ's</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contáctanos</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</header>
+            <h4>Posibles imágenes de la aplicación</h4>
+            <p class="font-weight-light font-italic">
+              *El diseño final de las pantallas puede diferir de las imágenes presentadas:
+            </p>
+            <!-- ### start of the gallery definition ### -->
+            <div id="nanogallery2" data-nanogallery2='{  
+              "thumbnailHeight":    400,
+              "thumbnailWidth":     "auto",
+              
+              "viewerToolbar":    {
+                     "standard":  "minimizeButton, label, shareButton, fullscreenButton",
+                     "minimized": "minimizeButton, label, fullscreenButton, downloadButton, infoButton" },
+               "viewerTools":      {
+                     "topLeft":   "label",
+                     "topRight":  "playPauseButton, zoomButton, fullscreenButton, closeButton" }   
+            }'>
+              <img src="images/sop/Loader.png" data-ngsrc="images/sop/Loader.png"
+                data-nanogallery2-lightbox='{ "viewerToolbar": { "display": false } }' alt="Mockup Diseño de Loader" />
+              <img src="images/sop/Login.png" data-ngsrc="images/sop/Login.png" data-nanogallery2-lightbox
+                alt="Mockup Diseño de Login" />
+              <img src="images/sop/Inicio.png" data-ngsrc="images/sop/Inicio.png" data-nanogallery2-lightbox
+                alt="Mockup Diseño de Inicio" />
+              <img src="images/sop/Menu.png" data-ngsrc="images/sop/Menu.png" data-nanogallery2-lightbox
+                alt="Mockup Diseño de Menú" />
+              <img src="images/sop/Acuerdos-2.png" data-ngsrc="images/sop/Acuerdos-2.png" data-nanogallery2-lightbox
+                alt="Diseño de Acuerdos de Adopción" />
+              <img src="images/sop/Adopción.png" data-ngsrc="images/sop/Adopción.png" data-nanogallery2-lightbox
+                alt="Diseño de Adopción" />
+              <img src="images/sop/Adopción-2.png" data-ngsrc="images/sop/Adopción-2.png" data-nanogallery2-lightbox
+                alt="Pantalla de Adopción-2" />
+              <img src="images/sop/Perfil-1.png" data-ngsrc="images/sop/Perfil-1.png" data-nanogallery2-lightbox
+                alt="Mockup Diseño de Perfil" />
+              <img src="images/sop/Listar.png" data-ngsrc="images/sop/Listar.png" data-nanogallery2-lightbox
+                alt="Mockup Diseño de Listar" />
+              <img src="images/sop/Agregar.png" data-ngsrc="images/sop/Agregar.png" data-nanogallery2-lightbox
+                alt="Mockup Diseño de Agregar" />
+              <img src="images/sop/Agregar-1.png" data-ngsrc="images/sop/Agregar-1.png" data-nanogallery2-lightbox
+                alt="Diseño de Listbox" />
+              <img src="images/sop/Actualizar.png" data-ngsrc="images/sop/Actualizar.png" data-nanogallery2-lightbox
+                alt="Mockup Diseño de Actualizar" />
 
-<!-- page-title -->
-<section class="page-title bg-cover" data-background="images/backgrounds/page-title.jpg">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h1 class="display-1 text-white font-weight-bold font-primary">Save Our Pets</h1>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /page-title -->
+            </div>
+            <!-- ### end of the gallery definition ### -->
 
-<!-- blog -->
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 col-md-6 mb-4">
-        <article class="card">
-          <img src="images/blog/post-1.jpg" alt="post-thumb" class="card-img-top mb-2">
-          <div class="card-body p-0">
-            <time>January 15, 2018</time>
-            <a href="blog-single.html" class="h4 card-title d-block my-3 text-dark hover-text-underline">How These Different
-              Book Covers Reflect the Design</a>
-            <a href="blog-single.html" class="btn btn-transparent">Read more</a>
-          </div>
-        </article>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4">
-        <article class="card">
-          <img src="images/blog/post-2.jpg" alt="post-thumb" class="card-img-top mb-2">
-          <div class="card-body p-0">
-            <time>January 15, 2018</time>
-            <a href="blog-single.html" class="h4 card-title d-block my-3 text-dark hover-text-underline">How These Different
-              Book Covers Reflect the Design</a>
-            <a href="blog-single.html" class="btn btn-transparent">Read more</a>
-          </div>
-        </article>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4">
-        <article class="card">
-          <img src="images/blog/post-3.jpg" alt="post-thumb" class="card-img-top mb-2">
-          <div class="card-body p-0">
-            <time>January 15, 2018</time>
-            <a href="blog-single.html" class="h4 card-title d-block my-3 text-dark hover-text-underline">How These Different
-              Book Covers Reflect the Design</a>
-            <a href="blog-single.html" class="btn btn-transparent">Read more</a>
-          </div>
-        </article>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4">
-        <article class="card">
-          <img src="images/blog/post-1.jpg" alt="post-thumb" class="card-img-top mb-2">
-          <div class="card-body p-0">
-            <time>January 15, 2018</time>
-            <a href="blog-single.html" class="h4 card-title d-block my-3 text-dark hover-text-underline">How These Different
-              Book Covers Reflect the Design</a>
-            <a href="blog-single.html" class="btn btn-transparent">Read more</a>
-          </div>
-        </article>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4">
-        <article class="card">
-          <img src="images/blog/post-2.jpg" alt="post-thumb" class="card-img-top mb-2">
-          <div class="card-body p-0">
-            <time>January 15, 2018</time>
-            <a href="blog-single.html" class="h4 card-title d-block my-3 text-dark hover-text-underline">How These Different
-              Book Covers Reflect the Design</a>
-            <a href="blog-single.html" class="btn btn-transparent">Read more</a>
-          </div>
-        </article>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4">
-        <article class="card">
-          <img src="images/blog/post-3.jpg" alt="post-thumb" class="card-img-top mb-2">
-          <div class="card-body p-0">
-            <time>January 15, 2018</time>
-            <a href="blog-single.html" class="h4 card-title d-block my-3 text-dark hover-text-underline">How These Different
-              Book Covers Reflect the Design</a>
-            <a href="blog-single.html" class="btn btn-transparent">Read more</a>
-          </div>
-        </article>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4">
-        <article class="card">
-          <img src="images/blog/post-1.jpg" alt="post-thumb" class="card-img-top mb-2">
-          <div class="card-body p-0">
-            <time>January 15, 2018</time>
-            <a href="blog-single.html" class="h4 card-title d-block my-3 text-dark hover-text-underline">How These Different
-              Book Covers Reflect the Design</a>
-            <a href="blog-single.html" class="btn btn-transparent">Read more</a>
-          </div>
-        </article>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4">
-        <article class="card">
-          <img src="images/blog/post-2.jpg" alt="post-thumb" class="card-img-top mb-2">
-          <div class="card-body p-0">
-            <time>January 15, 2018</time>
-            <a href="blog-single.html" class="h4 card-title d-block my-3 text-dark hover-text-underline">How These Different
-              Book Covers Reflect the Design</a>
-            <a href="blog-single.html" class="btn btn-transparent">Read more</a>
-          </div>
-        </article>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4">
-        <article class="card">
-          <img src="images/blog/post-3.jpg" alt="post-thumb" class="card-img-top mb-2">
-          <div class="card-body p-0">
-            <time>January 15, 2018</time>
-            <a href="blog-single.html" class="h4 card-title d-block my-3 text-dark hover-text-underline">How These Different
-              Book Covers Reflect the Design</a>
-            <a href="blog-single.html" class="btn btn-transparent">Read more</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /blog -->
+            <!---->
 
-<!-- footer -->
-<footer class="bg-secondary position-relative">
-  <img src="images/backgrounds/map.png" class="img-fluid overlay-image" alt="">
-  <div class="section">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-3 col-6">
-          <h4 class="text-white mb-5">Acerca de</h4>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-light d-block mb-3">Service</a></li>
-            <li><a href="#" class="text-light d-block mb-3">Conatact</a></li>
-            <li><a href="#" class="text-light d-block mb-3">Acerca de us</a></li>
-            <li><a href="#" class="text-light d-block mb-3">Save Our Pets</a></li>
-            <li><a href="#" class="text-light d-block mb-3">Support</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3 col-6">
-          <h4 class="text-white mb-5">Empresa</h4>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-light d-block mb-3">Service</a></li>
-            <li><a href="#" class="text-light d-block mb-3">Conatact</a></li>
-            <li><a href="#" class="text-light d-block mb-3">Acerca de us</a></li>
-            <li><a href="#" class="text-light d-block mb-3">Save Our Pets</a></li>
-            <li><a href="#" class="text-light d-block mb-3">Support</a></li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <div class="bg-white p-4">
-            <h3>Contáctanos</h3>
-            <form action="#">
-              <input type="text" id="name" name="name" class="form-control mb-4 px-0" placeholder="Nombre completo">
-              <input type="text" id="name" name="name" class="form-control mb-4 px-0" placeholder="Correo eléctronico">
-              <textarea name="message" id="message" class="form-control mb-4 px-0" placeholder="Mensaje"></textarea>
-              <button class="btn btn-primary" type="submit">Send</button>
-            </form>
+
+            <h4 style="margin-top:1em;">Costo de la aplicación móvil</h4>
+            <p>Será una aplicación gratuita que permita reportar mascotas callejeras generando una excelente forma de fomentar la responsabilidad social en la comunidad. No sólo ayudaría a solucionar el problema de los animales abandonados en las calles, sino que también contribuiría al bienestar animal y al mejoramiento del entorno urbano. </p>
+            <p>Al proporcionar esta herramienta de manera gratuita, se promueve el uso masivo de la aplicación, lo que a su vez aumenta la cantidad de reportes recibidos y facilita la identificación y posterior rescate de estos animales. Además, al tener un acceso libre y sencillo, se asegura que la aplicación sea utilizada por personas de todos los niveles socioeconómicos, lo que permite que más personas se involucren en el cuidado y protección de los animales en situación de calle.</p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="pb-4">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6 text-center text-md-left">
-          <p class="text-light mb-0">Copyright &copy; 2023 OrionWare Studio
-          </p>
-        </div>
-        <div class="col-md-6">
-          <ul class="list-inline text-md-right text-center">
-            <li class="list-inline-item"><a class="d-block p-3 text-white" href="#"><i class="ti-facebook"></i></a></li>
-            <li class="list-inline-item"><a class="d-block p-3 text-white" href="#"><i class="ti-twitter-alt"></i></a></li>
-            <li class="list-inline-item"><a class="d-block p-3 text-white" href="#"><i class="ti-instagram"></i></a></li>
-            <li class="list-inline-item"><a class="d-block p-3 text-white" href="#"><i class="ti-github"></i></a></li>
-          </ul>
+  </section>
+  <!-- /details-blog -->
+
+  <!-- footer -->
+  <footer class="bg-secondary position-relative">
+    <img src="images/backgrounds/map.png" class="img-fluid overlay-image" alt="">
+    <div class="section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-3 col-6">
+            <h4 class="text-white mb-5">Acerca de</h4>
+            <ul class="list-unstyled">
+              <li><a href="services.html" class="text-light d-block mb-3">Servicios</a></li>
+              <li><a href="contact.html" class="text-light d-block mb-3">Contáctenos</a></li>
+              <li><a href="about.html" class="text-light d-block mb-3">Nosotros</a></li>
+              <li><a href="blog.html" class="text-light d-block mb-3">Save Our Pets</a></li>
+              
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <h4 class="text-white mb-5">Empresa</h4>
+            <ul class="list-unstyled">
+              <li><a href="services.html" class="text-light d-block mb-3">Servicios</a></li>
+              <li><a href="contact.html" class="text-light d-block mb-3">Contáctenos</a></li>
+              <li><a href="about.html" class="text-light d-block mb-3">Nosotros</a></li>
+              <li><a href="blog.html" class="text-light d-block mb-3">Save Our Pets</a></li>
+              
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <div class="bg-white p-4">
+              <h3>Contáctanos</h3>
+              <form action="#">
+                <input type="text" id="name" name="name" class="form-control mb-4 px-0" placeholder="Nombre completo">
+                <input type="text" id="name" name="name" class="form-control mb-4 px-0"
+                  placeholder="Correo eléctronico">
+                <textarea name="message" id="message" class="form-control mb-4 px-0" placeholder="Mensaje"></textarea>
+                <button class="btn btn-primary" type="submit">Enviar</button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
-<!-- /footer -->
+    <div class="pb-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-left">
+            <p class="text-light mb-0">Copyright &copy; 2023 OrionWare Studio
+            </p>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-inline text-md-right text-center">
+              <li class="list-inline-item"><a class="d-block p-3 text-white" href="#"><i class="ti-facebook"></i></a>
+              </li>
+              <li class="list-inline-item"><a class="d-block p-3 text-white" href="#"><i class="ti-twitter-alt"></i></a>
+              </li>
+              <li class="list-inline-item"><a class="d-block p-3 text-white" href="#"><i class="ti-instagram"></i></a>
+              </li>
+              <li class="list-inline-item"><a class="d-block p-3 text-white" href="#"><i class="ti-github"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- /footer -->
 
-<!-- jQuery -->
-<script src="plugins/jQuery/jquery.min.js"></script>
-<!-- Bootstrap JS -->
-<script src="plugins/bootstrap/bootstrap.min.js"></script>
-<!-- slick slider -->
-<script src="plugins/slick/slick.min.js"></script>
-<!-- venobox -->
-<script src="plugins/venobox/venobox.min.js"></script>
-<!-- shuffle -->
-<script src="plugins/shuffle/shuffle.min.js"></script>
-<!-- apear js -->
-<script src="plugins/counto/apear.js"></script>
-<!-- counter -->
-<script src="plugins/counto/counTo.js"></script>
-<!-- card slider -->
-<script src="plugins/card-slider/js/card-slider-min.js"></script>
-<!-- google map -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
-<script src="plugins/google-map/gmap.js"></script>
+  <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" type="text/javascript"></script>
+  <!-- nanogallery2 -->
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <!-- slick slider -->
+  <script src="plugins/slick/slick.min.js"></script>
+  <!-- venobox -->
+  <script src="plugins/venobox/venobox.min.js"></script>
+  <!-- shuffle -->
+  <script src="plugins/shuffle/shuffle.min.js"></script>
+  <!-- apear js -->
+  <script src="plugins/counto/apear.js"></script>
+  <!-- counter -->
+  <script src="plugins/counto/counTo.js"></script>
+  <!-- card slider -->
+  <script src="plugins/card-slider/js/card-slider-min.js"></script>
+  <!-- google map -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+  <script src="plugins/google-map/gmap.js"></script>
 
-<!-- Main Script -->
-<script src="js/script.js"></script>
+  <!-- Main Script -->
+  <script src="js/script.js"></script>
 
 </body>
+
 </html>

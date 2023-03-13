@@ -1,15 +1,9 @@
-/**
- * WEBSITE: https://themefisher.com
- * TWITTER: https://twitter.com/themefisher
- * FACEBOOK: https://www.facebook.com/themefisher
- * GITHUB: https://github.com/themefisher/
- */
 
 /*!------------------------------------------------------------------
 [MAIN STYLESHEET]
 
-PROJECT:	Project Name
-VERSION:	Versoin Number
+PROJECT:	OrionWare studio
+VERSION:	1.0
 -------------------------------------------------------------------*/
 /*------------------------------------------------------------------
 [TABLE OF CONTENTS]
@@ -1108,6 +1102,19 @@ align-items: center;
 
 .card-footer {
   border: 0;
+}
+
+.card p{
+  padding: 0 2em;
+}
+
+.card ol{
+  padding: 0 4em;
+  list-style-type: disclosure-closed;
+}
+
+dt{
+  margin-top: 2em;
 }
 
 /*# sourceMappingURL=style.css.map */
